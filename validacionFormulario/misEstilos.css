@@ -1,0 +1,147 @@
+article form
+{
+	font-size: 0.8em;
+	overflow: hidden;
+	border-bottom: 1px solid #9A9A9A;
+}
+article form #botonEnvio
+{
+	margin: 1em 0;
+	text-align: right;
+
+}
+article form fieldset
+{
+	background-color: #FFFFF4;
+	border: 2px solid gray;
+}
+article form fieldset legend
+{
+	color: blue;
+	font-size: 0.8em;
+}
+article form .iguales
+{
+	width: 46%;
+	float: left;
+}
+article form .iguales ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+article form .iguales ul li 
+{
+	margin: 0.3em 0.5em;
+	text-align: right;
+}
+article form .iguales ul li input
+{
+	margin-left: 0.5em;
+}
+article form .iguales ul li .obligatorios
+{
+	color: red;
+	font-weight: bold;
+}
+article #psegundo
+{
+	font-size: 0.8em;
+}
+article #psegundo span
+{
+	color: red;
+}
+
+body
+{
+	font-size: 16px;
+
+}
+
+header
+{
+	background-color: #F7F7F7;
+	border: 1px solid #E8E8E8;
+	padding: 15px;
+}
+header h1
+{
+	font-size: 2.2em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+header p
+{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}
+header h1 span
+{
+	color: red;
+}
+#contenedorPrincipal
+{
+	margin: 20px auto;
+	width: 53.5%;
+	min-width: 320px;
+}
+#primero table
+{
+	border-spacing: 2px;
+	border-collapse: separate;
+	border-bottom: 1px solid #4D4D4D;
+	color: #4D4D4D;
+	font-size: 0.9em;
+	margin-top: 2em;
+	text-align: left;
+	width: 100%;
+}
+#primero table thead tr th
+{
+	padding: 0.2em;
+	background-color: #F9F9F9;
+	border: 1px solid #E8E8E8;
+}
+#primero table tbody tr th,
+#primero table tbody tr td
+{
+	padding: 0.5em;
+}
+#primero table tbody tr #total
+{
+	border-top: 1px solid #CCC;
+}
+#primero table tbody tr .center
+{
+	text-align: center;
+}
+#primero table tbody tr .right
+{
+	text-align: right;
+	padding-right: 4em;
+}
+.tituloArticulo
+{
+	background-color: #002D88;
+	color: white;
+	font-size: 1em; 
+	font-weight: bold;
+	padding: 0.5em;
+}
+#primero #subparra1
+{
+	font-size: 0.8em;
+}
+#subHeader h2
+{
+	color: #930;
+	font-weight: normal;
+	text-align: right;
+}

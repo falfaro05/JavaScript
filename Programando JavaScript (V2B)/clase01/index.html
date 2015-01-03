@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>probando</title>
+	<script type="text/javascript" src="clase1.js"></script>
+
+	<style type="text/css">
+		ul
+		{
+			list-style: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1 align="center">Bienvenido desde HTML</h1>
+
+	<form action="#" method="post" enctype="text/plain">
+
+		<ul>
+			<li>
+				<label for="dia">dia: </label>
+				<select name="dia" id="dia">
+					<script type="text/javascript">
+						crearOption(1,31,20);
+					</script>
+				</select>
+				<label for="mes">Mes: </label>
+				<select name="mes" id="mes">
+					<script type="text/javascript">
+						crearOption(1,12,6);
+					</script>
+				</select>
+				<label for="anio">Año: </label>
+				<select name="anio" id="anio">
+					<script type="text/javascript">
+						crearOption(1900,2014,1980);
+					</script>
+				</select>
+
+
+
+			</li>
+
+
+		</ul>
+
+	</form>
+
+</body>
+</html>

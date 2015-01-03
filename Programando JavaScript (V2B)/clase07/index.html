@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>probando7</title>
+	<script type="text/javascript" src="clase1.js"></script>
+	<style type="text/css">
+		input.enFoco
+		{
+			background-color: red;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<h1 align="center">Bienvenido desde HTML</h1>
+
+	
+
+	<a href="http://www.google.com" onclick="cambiar()" id="link">Ir a google</a>
+
+	<div id="miDiv" style="width: 200px; height: 200px; border: 1px solid red; margin: 15px;" onmouseover="cambioFondo()" onmouseout="this.style.background = 'white'"></div>
+
+	<ul>
+		<li><label for="nombre">Nombre: </label><input type="text" id="nombre" onfocus="cambFoco(this)" onblur="this.className = ''"></li>
+		<li><label for="apellido">Apellido: </label><input type="text" id="apellido" onkeyup="determinaTecla(event);"></li>
+
+	</ul>
+
+</body>
+</html>
+
+

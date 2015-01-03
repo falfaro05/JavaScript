@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Pruebas</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<link rel="stylesheet" type="text/css" href="misEstilos.css" />
+	<script type="text/javascript" src="modernizr.js"></script>
+	<script type="text/javascript" src="miscript.js"></script>
+</head>
+<body>
+
+	<div id="contenedorPrincipal">
+
+		<header>
+			<h1><span>Tu</span>Tienda</h1>
+			<p>Ya puedes vender lo que quieras por internet</p>
+
+		</header>
+		<div id="subHeader">
+			<h2>Cesta de la compra</h2>
+		</div>
+
+		<article id="primero">
+			<p class="tituloArticulo">Articulos en la cesta</p>
+
+			<p id="subparra1">Tabla de Articulos incluidos en la cesta de la compra e importes</p>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Precio Unitario</th>
+						<th>Cantidad</th>
+						<th>Precio total por producto</th>
+
+					</tr>
+
+				</thead>
+				<tbody>
+					<tr>
+						<th>Gafas de sol</th>
+						<td class="center">140 €</td>
+						<td class="center">1</td>
+						<td class="right">140 €</td>
+					</tr>
+					<tr>
+						<th>Precio Total</th>
+						<td></td>
+						<td></td>
+						<th class="right" id="total">140 €</th>
+					</tr>
+
+				</tbody>
+	
+			</table>
+		</article>
+		<article>
+			<p class="tituloArticulo">Datos de Facturación</p>
+
+			<p id="psegundo">Los campos marcados en <span>negritas</span> son obligatorios</p>
+
+			<form action="#" method="post" enctype="text/plain" onsubmit="return validarForm();">
+
+				<fieldset class="iguales">
+					<legend>Datos Personales</legend>
+					<ul>
+						<li><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa" placeholder="Nombre de la empresa"></li>
+						<li><label for="nombre" class="obligatorios">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Su Nombre"></li>
+						<li><label for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" placeholder="Sus Apellidos"></li>
+						<li><label for="email" class="obligatorios">Correo Electrónico</label><input type="text" id="email" name="email" placeholder="Correo Electronico"></li>
+						<li><label for="telefono" class="obligatorios">Tel. de contacto</label><input type="text" id="telefono" name="telefono" placeholder="Teléfono"></li>
+
+
+					</ul>
+
+				</fieldset>
+				<fieldset class="iguales">
+					<legend>Datos de envío</legend>
+					<ul>
+						<li><label for="direccion">Dirección</label><input type="text" id="direccion" name="direccion" placeholder="direccion"></li>
+						<li><label for="localidad">Localidad</label><input type="text" id="localidad" name="localidad" placeholder="Localidad"></li>
+						<li><label for="provincia">Provincia</label><input type="text" id="provincia" name="provincia" placeholder="Provincia"></li>
+						<li><label for="codigoPostal">CP</label><input type="text" id="codigoPostal" name="codigoPostal" placeholder="Código Postal"></li>
+
+
+					</ul>
+
+				</fieldset>
+				<fieldset>
+					<legend>Observaciones:</legend>
+					<textarea cols="80" rows="6" placeholder="Escriba sus observaciones aqui..."></textarea>
+				</fieldset>
+
+				<div id="botonEnvio"><input type="submit" value="Realizar pedido"></div>
+
+			</form>
+
+
+		</article>
+
+	</div>
+
+
+</body>
+</html>

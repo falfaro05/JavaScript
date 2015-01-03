@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>probando8</title>
+	<script type="text/javascript" src="clase1.js"></script>
+	<style type="text/css">
+		#miFormulario{
+			margin-left: 50px;
+			width: 400px;
+		}
+
+		.enfoco
+		{
+			background-color: #9F9;
+			border: 1px solid green;
+			color: grey;
+		}
+		.requerido
+		{
+			border: 1px solid red;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<h1 align="center" style="border: 1px solid red; width: 500px; margin: 30px auto;" onmouseover="cambioTitulo(this);">Bienvenido desde HTML</h1>
+
+	
+	<form id="miFormulario" action="#" method="post" enctype="text/plain" onsubmit="return validarForm();">
+
+		<fieldset>
+			<ul style="list-style: none;">
+				<li><label for="nombre">Nombre: </label></li>
+				<li><input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre..." onfocus="entroEnFoco(this)" 			onblur="quitarFoco(this); requerido(this); revisarLongitud(this);"></li>
+				<li><label for="direccion">Dirección:</label></li>
+				<li><input type="text" name="direccion" id="direccion" placeholder="donde vives..." onfocus="entroEnFoco(this)" 			onblur="quitarFoco(this); revisarEdad(this); mensajeError(this)"></li>
+				<li><label for="edad">Edad:</label></li>
+				<li><select id="edad" onfocus="entroEnFoco(this)" onblur="quitarFoco(this);">
+					<script type="text/javascript">
+						for(var i=0; i<70; i++){
+							document.write("<option>" + i + "</option>");
+
+						}
+
+					</script>
+					</select></li>
+				<li><label for="email">E-mail:</label></li>
+				<li><input type="email" name="email" id="email" placeholder="ejemplo@dominio.com" onfocus="entroEnFoco(this)" 			   onblur="quitarFoco(this);"></li>	
+				<li><label for="ecivil">Estado Civil: </label></li>
+				<li><select id="ecivil" onfocus="entroEnFoco(this)" onblur="quitarFoco(this);">
+					<option value="casado">Casado</option>
+					<option value="Divorsiado">Divorsiado</option>
+					<option value="soltero">Soltero</option>
+					<option value="viudo">Viudo</option>
+					<option value="acompañado">Acompañado</option>
+					</select></li>	
+				<li><input type="checkbox" name="acepterminos" id="acepterminos" onfocus="entroEnFoco(this)" onblur="quitarFoco(this);"><label for="acepterminos">Acepto los terminos</label></li>	
+				<li><input type="submit" value="Registrarme" id="btregistro"></li>
+
+			</ul>
+
+		</fieldset>
+
+
+	</form>
+
+
+	<input type="button" value="abrir ventana" onclick="abrirVentana();">
+</body>
+</html>
